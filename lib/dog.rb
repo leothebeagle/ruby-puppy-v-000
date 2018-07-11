@@ -6,7 +6,9 @@ class Dog
   end
 
   def self.all
-
+    @@all.each do |pet|
+      puts pet.name
+    end
   end
 
   attr_reader :name
